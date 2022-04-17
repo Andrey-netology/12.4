@@ -2,15 +2,18 @@
 
 Запускаем 5 нод с помощью Vagrant 
 
-Vagrantfile
+![alt text](https://github.com/Andrey-netology/12.4/blob/main/Vagrantfile "Logo Title Text 1")
 
 На мастер ноде генерим ключ с помощью команды  ssh-keygen
-Потом на каждой рабочей ноде создаем файл authorized_keys и копируем туда публичный ключ с мастера 
+Потом на каждый ноду копируем ключ ssh-copy-id username@remote_host
 
-В k8s_cluster установил параметр container_manager: containerd
-
+Для настройки использовал данную статью: https://rebrainme.com/blog/kubernetes/sozdanie-klastera-kubernetes-na-vps-s-pomoshhyu-kubespray/
 Создал необходимый файл hosts.ini 
 
-Запустил установку через kubespray
+![alt text](https://github.com/Andrey-netology/12.4/blob/main/host.ini "Logo Title Text 1")
+
+Запустил установку и получил следующий результат: 
+
+![alt text](https://github.com/Andrey-netology/12.4/blob/main/task "Logo Title Text 1")
 
 
